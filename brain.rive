@@ -1,0 +1,53 @@
+//chatbot brain
+! version = 2.0
+
+! var num =37555
++ *
+- what ? 
+- i have to go now 
++ # // only number 
+- Great i like the number <star> 
++ hello 
+- hey , whats u'r name ? 
++  * 
+% * name
+- nice to meet you <star>
+
+// ---------------------- name --------------------------------
+
++ my name is *
+* <formal>   == <bot name> => Wow, we have the same name!<set name=<formal>>
+* <get name> == undefined  => <set name=<formal>>Nice to meet you!
+- <set oldname=<get name>><set name=<formal>>
+^ I thought your name was <get oldname>?
+
++ what is my name
+* <get name> == undefined => You never told me your name.
+- Your name is <get name>, silly!
+- Aren't you <get name>?
+// ---------------- number game --------------------------------
+// + *
+// - guess a number between 0 and 99999
+
+
+// + #
+// * <star> > <bot num> => pick  a lower  number 
+// * <star> < <bot num> => pick  a higher  number 
+// * <star> == <bot num> => you got it !
+
+// ---------------------- knock knock -------------------
+// ! sub who's = who is 
+
+// + *
+// - try say knock knock 
+
+// + [*] knock knock [*]
+// - who's  there ? 
+
+// + *
+// % who is there 
+// - <star1> who ?
+
+// + * 
+// % * who
+// - hahahahahahah 
